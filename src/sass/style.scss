@@ -70,4 +70,22 @@ button {
     background-color: #0056b3;
   }
 
-// Agregué los resets y estilos básicos a mi proyecto, uso flexbox sobre el form y los contenedores de los campos para hacerlos quedar en una sola columna, defino tamaños y la pseudoclase :hover sobre el botón.
+  @media screen and (min-width: 576px) {
+    .form-container__label-name,
+    .form-container__label-lastName,
+    .form-container__label-telephone,
+    .form-container__label-email {
+      width: calc(50% - 1rem); /* Dos columnas con espacio entre ellas */
+    }
+
+    input {
+        max-width: 19rem;
+    }
+
+    button {
+        margin: auto;
+        align-self: center;
+    }
+  }
+
+
