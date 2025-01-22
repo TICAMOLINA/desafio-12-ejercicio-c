@@ -88,4 +88,26 @@ button {
     }
   }
 
+  @media screen and (min-width: 768px) {
+    .form-container__label-name,
+    .form-container__label-lastName,
+    .form-container__label-telephone,
+    .form-container__label-email {
+        width: calc(50% - auto);
+          align-items: center; /* Centra los label e inputs horizontalmente */
+    text-align: center; /* Centra el texto de los label */
+    }
+    input {
+        font-size: 1.5em;
+        padding: 0.8rem;
+        min-width: 22rem;
+        max-width: 25rem;
+      }
+
+    label {
+        text-align: center;
+    }
+    }
+
+
 
