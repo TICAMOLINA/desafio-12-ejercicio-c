@@ -110,4 +110,45 @@ button {
     }
 
 
+    @media screen and (min-width: 992px) {
+      .form-container__label-name,
+      .form-container__label-lastName,
+      .form-container__label-telephone,
+      .form-container__label-email {
+        position: relative;
+      }
+    
+    
+      label {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        font-size: 20em;
+        background: #7d2ae8;
+        padding: 0 4px;
+        transition: all 0.3s;
+      }
+    
+      input {
+          border-radius: 5px;
+          border-style: solid;
+          border: 1px 1px 1px 1px;
+          background-color: #7d2ae8;
+      }
+
+      input:focus {
+          color: white;
+          outline: none;
+      }
+      input:focus + label,
+      input:not(:placeholder-shown) + label {
+        top: -12px;
+        left: 7rem;
+        font-size: 0.9em;
+        color: white;
+      }
+    }
+
+
+
 
