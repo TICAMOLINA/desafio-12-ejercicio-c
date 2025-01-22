@@ -1,25 +1,43 @@
 <!doctype html>
 <html lang="es">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
 
-  <body>
+<body>
+<h1>DEJANOS TU CONTACTO 📱</h1>
+  <div class="form-container">
 
     <form>
-    	<label for="nombre">Nombre:</label>
-    	<input type="text" id="nombre" name="nombre">
+      <div class="form-container__label-name">
+        <input type="text" id="nombre" name="nombre">
+        <label for="nombre">Nombre</label>
+      </div>
 
-    	<label for="email">Correo electrónico:</label>
-    	<input type="email" id="email" name="email">
+      <div class="form-container__label-lastName">
+        <input type="text" id="apellido" name="apellido">
+        <label for="apellido">Apellido</label>
+      </div>
 
-	    <button>Enviar</button>
+      <div class="form-container__label-telephone">
+        <input type="text" id="telephone" name="telephone">
+        <label for="telephone">Teléfono</label>
+      </div>
+
+      <div class="form-container__label-email">
+        <input type="email" id="email" name="email">
+        <label for="email">Correo electrónico</label>
+      </div>
+
+      <div class="form-container__submit-button"></div>
+      <button>Enviar</button>
     </form>
+  </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <script type="module" src="/src/main.js"></script>
+</body>
 
 </html>

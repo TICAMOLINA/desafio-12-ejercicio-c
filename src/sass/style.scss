@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #7d2ae8;
+    color: wheat
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .form-container {
+    max-width: 75rem;
+    margin: 5rem auto;
+    padding: 1.25rem;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .form-container__label-name,
+  .form-container__label-lastName,
+  .form-container__label-telephone,
+  .form-container__label-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Por defecto, campos apilados */
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    max-width: 23.75rem;
+}
+  
+button {
+    padding: 0.625rem 1.25rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 18.75rem;
+    max-width: 23.75rem;
+}
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+// Agregué los resets y estilos básicos a mi proyecto, uso flexbox sobre el form y los contenedores de los campos para hacerlos quedar en una sola columna, defino tamaños y la pseudoclase :hover sobre el botón.
