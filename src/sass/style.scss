@@ -17,8 +17,9 @@ body {
   }
 
   h1 {
-    text-align: center;
+    text-align: start;
     margin-top: 5rem;
+    margin-left: 1.2rem;
   }
   
   .form-container {
@@ -71,6 +72,11 @@ button {
   }
 
   @media screen and (min-width: 576px) {
+
+    h1 {
+      text-align: center;
+      margin-left: 0;
+    }
     .form-container__label-name,
     .form-container__label-lastName,
     .form-container__label-telephone,
@@ -148,6 +154,26 @@ button {
         color: white;
       }
     }
+
+    @media screen and (min-width: 1200px) {
+
+      body {
+          height: 90vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+      }
+      .form-container {
+          margin: 0 0 0 0;
+        }
+
+      h1 {
+          padding: 1rem;
+      }
+      }
+
 
 
 
